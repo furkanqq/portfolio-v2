@@ -42,6 +42,28 @@ const portfolio: PortfolioType[] = [
     visit: true,
   },
   {
+    title: "Customer Tracking System",
+    params:
+      "NextJS, TailwindCSS, TypeScript, Responsive Design, NetGSM, Mail, QR Code Scanner, Railway",
+    desc: "A customer tracking system designed for gyms and fitness centers. It allows staff to manage and update customer profiles, including personal details and the number of remaining classes. The system also integrates with a QR code scanner: when customers scan their code at the entrance, the system automatically deducts a class from their balance. If fewer than two classes remain, an automated email notification is sent to remind them to renew their package.",
+    img: "https://res.cloudinary.com/ddfqedsqq/image/upload/v1743492169/fithouse_cover.webp",
+    link: "It cannot be shared because it is an admin panel.",
+    githubLink: "",
+    githubVisit: false,
+    visit: false,
+  },
+  {
+    title: "Portfolio Website",
+    params:
+      "ReactJS, Module CSS, TypeScript, Responsive Design, Router Dom, Context",
+    desc: "My old personal portfolio website built with ReactJS and TypeScript. Featuring a clean, responsive design, the site showcases my skills, projects, and contact information.",
+    img: "https://res.cloudinary.com/ddfqedsqq/image/upload/v1757859793/portfolio-cover.webp",
+    link: "https://portfolio-137k.vercel.app/",
+    githubLink: "https://github.com/furkanqq/portfolio",
+    githubVisit: true,
+    visit: true,
+  },
+  {
     title: "Balance Solution",
     params:
       "NextJS, SCSS, Rest API, Redux, TypeScript, Responsive Design, Directus, Cloudinary",
@@ -60,17 +82,6 @@ const portfolio: PortfolioType[] = [
     desc: "An AI-powered application that asks users 100 questions about their ideal partner. Based on the answers, the AI analyzes the results across 6 different categories and provides personalized insights to the user.",
     img: "https://res.cloudinary.com/ddfqedsqq/image/upload/v1743492169/blindlover_cover.webp",
     link: "https://blindlover.com",
-    githubLink: "",
-    githubVisit: false,
-    visit: false,
-  },
-  {
-    title: "Customer Tracking System",
-    params:
-      "NextJS, TailwindCSS, TypeScript, Responsive Design, NetGSM, Mail, QR Code Scanner, Railway",
-    desc: "A customer tracking system designed for gyms and fitness centers. It allows staff to manage and update customer profiles, including personal details and the number of remaining classes. The system also integrates with a QR code scanner: when customers scan their code at the entrance, the system automatically deducts a class from their balance. If fewer than two classes remain, an automated email notification is sent to remind them to renew their package.",
-    img: "https://res.cloudinary.com/ddfqedsqq/image/upload/v1743492169/fithouse_cover.webp",
-    link: "It cannot be shared because it is an admin panel.",
     githubLink: "",
     githubVisit: false,
     visit: false,
