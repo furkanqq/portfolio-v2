@@ -1,0 +1,10 @@
+# robots.txt for Furkan İlhan Portfolio
+
+# Sitemap konumu
+Sitemap: https://www.furkanilhan.com/sitemap.xml
+
+# Özel kurallar
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
