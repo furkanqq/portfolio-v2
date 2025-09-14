@@ -57,7 +57,7 @@ const portfolio: PortfolioType[] = [
     params:
       "ReactJS, Module CSS, TypeScript, Responsive Design, Router Dom, Context",
     desc: "My old personal portfolio website built with ReactJS and TypeScript. Featuring a clean, responsive design, the site showcases my skills, projects, and contact information.",
-    img: "https://res.cloudinary.com/ddfqedsqq/image/upload/v1757859793/portfolio-cover.webp",
+    img: "https://res.cloudinary.com/ddfqedsqq/image/upload/v1757860040/portfolio-cover.webp",
     link: "https://portfolio-137k.vercel.app/",
     githubLink: "https://github.com/furkanqq/portfolio",
     githubVisit: true,
