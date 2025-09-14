@@ -3,6 +3,7 @@ import "./globals.css";
 import { Geist, Geist_Mono, Kode_Mono } from "next/font/google";
 import { ToastProvider } from "@/components/toast";
 import Script from "next/script";
+import Head from "next/head";
 
 const geistSans = Geist({ subsets: ["latin"], variable: "--font-geist-sans" });
 const geistMono = Geist_Mono({
@@ -69,7 +70,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
+      <Head>
         <link
           rel="icon"
           type="image/png"
@@ -78,6 +79,7 @@ export default function RootLayout({
         />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -86,7 +88,7 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-title" content="Furkan" />
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="canonical" href="https://www.furkanilhan.com/" />
-      </head>
+      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${kodeMono.variable} antialiased`}
       >
