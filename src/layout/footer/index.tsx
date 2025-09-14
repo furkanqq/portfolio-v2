@@ -1,5 +1,4 @@
 import { Github, Instagram, Linkedin } from "@/assets/icons/icons";
-import { EncryptButton } from "@/components/encrypt";
 import {
   Tooltip,
   TooltipContent,
@@ -22,7 +21,7 @@ export default function Footer() {
           </Link>
         </TooltipTrigger>
         <TooltipContent>
-          <p>Furkan's Instagram Account</p>
+          <p>{"Furkan's Instagram Account"}</p>
         </TooltipContent>
       </Tooltip>
       <Tooltip>
@@ -36,7 +35,7 @@ export default function Footer() {
           </Link>
         </TooltipTrigger>
         <TooltipContent>
-          <p>Furkan's Linkedin Account</p>
+          <p>{"Furkan's Linkedin Account"}</p>
         </TooltipContent>
       </Tooltip>
       <Tooltip>
@@ -50,7 +49,7 @@ export default function Footer() {
           </Link>
         </TooltipTrigger>
         <TooltipContent>
-          <p>Furkan's Github Account</p>
+          <p>{"Furkan's Github Account"}</p>
         </TooltipContent>
       </Tooltip>
     </footer>

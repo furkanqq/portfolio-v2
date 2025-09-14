@@ -1,7 +1,6 @@
 "use client";
 import { useRef, useState } from "react";
 import { LettersPullUp } from "../letterPullUp";
-import { Button } from "../ui/button";
 import Link from "next/link";
 import * as motion from "motion/react-client";
 import Image from "next/image";

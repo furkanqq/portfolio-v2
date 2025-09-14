@@ -5,7 +5,7 @@ import {
   useMotionValue,
   useSpring,
 } from "framer-motion";
-import { Eye, Mouse, MouseIcon, MousePointer } from "lucide-react";
+import { Eye } from "lucide-react";
 
 const ROTATION_RANGE = 32.5;
 const HALF_ROTATION_RANGE = 32.5 / 2;
@@ -92,7 +92,7 @@ export const TiltCard = () => {
           }}
           className="text-center text-xl"
         >
-          Let's Talk
+          {"Let's Talk"}
         </p>
       </div>
     </motion.div>

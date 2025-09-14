@@ -5,7 +5,6 @@ import Header from "./header";
 import * as motion from "motion/react-client";
 import { useEffect, useState } from "react";
 import Footer from "./footer";
-import { ToastProvider } from "@/components/toast";
 
 //overflow-hidden, rounded-xl olan yere
 
