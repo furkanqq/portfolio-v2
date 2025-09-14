@@ -53,6 +53,17 @@ const portfolio: PortfolioType[] = [
     visit: false,
   },
   {
+    title: "Crypto Exchange",
+    params:
+      "ReactJS, TypeScript, JS, CSS, Redux, Web Socket, Rest API, ESLint, Prettier, Responsive Design",
+    desc: "A cryptocurrency exchange platform that allows users to trade various digital assets. The platform features real-time price updates, advanced charting tools, and a user-friendly interface for seamless trading.",
+    img: "https://res.cloudinary.com/ddfqedsqq/image/upload/v1743492170/bln_cover.webp",
+    link: "https://exchange-balancenetwork.io/",
+    githubLink: "",
+    githubVisit: false,
+    visit: false,
+  },
+  {
     title: "Portfolio Website",
     params:
       "ReactJS, Module CSS, TypeScript, Responsive Design, Router Dom, Context",
