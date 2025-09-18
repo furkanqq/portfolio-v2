@@ -157,10 +157,10 @@ const Card = ({
                 </Tooltip>
               )}
               {!project.visit && !project.githubLink && (
-                <div className="text-center ">
+                <span className="text-center ">
                   Due to legal reasons, the source code and content cannot be
                   shared.
-                </div>
+                </span>
               )}
             </DialogDescription>
           </DialogHeader>

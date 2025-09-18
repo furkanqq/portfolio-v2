@@ -42,16 +42,17 @@ const portfolio: PortfolioType[] = [
     visit: true,
   },
   {
-    title: "Customer Tracking System",
+    title: "PDR Portfolio",
     params:
-      "NextJS, TailwindCSS, TypeScript, Responsive Design, NetGSM, Mail, QR Code Scanner, Railway",
-    desc: "A customer tracking system designed for gyms and fitness centers. It allows staff to manage and update customer profiles, including personal details and the number of remaining classes. The system also integrates with a QR code scanner: when customers scan their code at the entrance, the system automatically deducts a class from their balance. If fewer than two classes remain, an automated email notification is sent to remind them to renew their package.",
-    img: "https://res.cloudinary.com/ddfqedsqq/image/upload/v1743492169/fithouse_cover.webp",
-    link: "It cannot be shared because it is an admin panel.",
+      "ReactJS, TailwindCSS, Responsive Design, Brand Identity, Web Design",
+    desc: "A simple portfolio website for a psychological counseling and guidance professional, showcasing their services, experience, and contact information.",
+    img: "https://res.cloudinary.com/ddfqedsqq/image/upload/v1758232077/pdr-cover.webp",
+    link: "https://pdr-sooty.vercel.app/",
     githubLink: "",
     githubVisit: false,
-    visit: false,
+    visit: true,
   },
+
   {
     title: "Crypto Exchange",
     params:
@@ -73,6 +74,17 @@ const portfolio: PortfolioType[] = [
     githubLink: "https://github.com/furkanqq/portfolio",
     githubVisit: true,
     visit: true,
+  },
+  {
+    title: "Customer Tracking System",
+    params:
+      "NextJS, TailwindCSS, TypeScript, Responsive Design, NetGSM, Mail, QR Code Scanner, Railway",
+    desc: "A customer tracking system designed for gyms and fitness centers. It allows staff to manage and update customer profiles, including personal details and the number of remaining classes. The system also integrates with a QR code scanner: when customers scan their code at the entrance, the system automatically deducts a class from their balance. If fewer than two classes remain, an automated email notification is sent to remind them to renew their package.",
+    img: "https://res.cloudinary.com/ddfqedsqq/image/upload/v1743492169/fithouse_cover.webp",
+    link: "It cannot be shared because it is an admin panel.",
+    githubLink: "",
+    githubVisit: false,
+    visit: false,
   },
   {
     title: "Balance Solution",
