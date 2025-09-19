@@ -36,9 +36,9 @@ export default function Projects() {
           <TiltCard />
         </Link>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-1">
         {portfolio.map((project, i) => (
-          <Card project={project} className="w-full h-64 md:h-96" key={i} />
+          <Card project={project} className="w-full h-52 md:h-72" key={i} />
         ))}
       </div>
     </Layout>
