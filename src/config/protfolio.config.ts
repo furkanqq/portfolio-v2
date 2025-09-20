@@ -54,16 +54,18 @@ const portfolio: PortfolioType[] = [
   },
 
   {
-    title: "Crypto Exchange",
+    title: "Balance Landing",
     params:
-      "ReactJS, TypeScript, JS, CSS, Redux, Web Socket, Rest API, ESLint, Prettier, Responsive Design",
-    desc: "A cryptocurrency exchange platform that allows users to trade various digital assets. The platform features real-time price updates, advanced charting tools, and a user-friendly interface for seamless trading.",
-    img: "https://res.cloudinary.com/ddfqedsqq/image/upload/v1743492170/bln_cover.webp",
-    link: "https://exchange-balancenetwork.io/",
+      "NextJS, JS, CSS, Context, Redux, Directus, Rest API, ESLint, Prettier, Responsive Design",
+    desc: "A landing page for Balance Network, a blockchain ecosystem. The site provides information about the network's features, services, and how to get started.",
+    img: "https://res.cloudinary.com/ddfqedsqq/image/upload/v1758328637/landing-cover.webp",
+    link: "https://balance-landing-v3.vercel.app/",
+    // link: "https://www.balancenetwork.io/",
     githubLink: "",
     githubVisit: false,
-    visit: false,
+    visit: true,
   },
+
   {
     title: "Portfolio Website",
     params:
@@ -82,6 +84,17 @@ const portfolio: PortfolioType[] = [
     desc: "A customer tracking system designed for gyms and fitness centers. It allows staff to manage and update customer profiles, including personal details and the number of remaining classes. The system also integrates with a QR code scanner: when customers scan their code at the entrance, the system automatically deducts a class from their balance. If fewer than two classes remain, an automated email notification is sent to remind them to renew their package.",
     img: "https://res.cloudinary.com/ddfqedsqq/image/upload/v1743492169/fithouse_cover.webp",
     link: "It cannot be shared because it is an admin panel.",
+    githubLink: "",
+    githubVisit: false,
+    visit: false,
+  },
+  {
+    title: "Crypto Exchange",
+    params:
+      "ReactJS, TypeScript, JS, CSS, Redux, Web Socket, Rest API, ESLint, Prettier, Responsive Design",
+    desc: "A cryptocurrency exchange platform that allows users to trade various digital assets. The platform features real-time price updates, advanced charting tools, and a user-friendly interface for seamless trading.",
+    img: "https://res.cloudinary.com/ddfqedsqq/image/upload/v1758328637/crypto-cover.webp",
+    link: "https://exchange-balancenetwork.io/",
     githubLink: "",
     githubVisit: false,
     visit: false,
@@ -162,22 +175,11 @@ const portfolio: PortfolioType[] = [
     visit: true,
   },
   {
-    title: "Balance Landing",
-    params:
-      "NextJS, JS, CSS, Context, Redux, Directus, Rest API, ESLint, Prettier, Responsive Design",
-    desc: "A landing page for Balance Network, a blockchain ecosystem. The site provides information about the network's features, services, and how to get started.",
-    img: "https://res.cloudinary.com/ddfqedsqq/image/upload/v1743492170/bln_cover.webp",
-    link: "https://www.balancenetwork.io/",
-    githubLink: "",
-    githubVisit: false,
-    visit: false,
-  },
-  {
     title: "NFT Marketplace",
     params:
       "NextJS, TypeScript, Tailwind, Redux, Web3, Wagmi, ESLint, Prettier, Responsive Design",
     desc: "An NFT marketplace where users can buy, sell, and trade non-fungible tokens. The platform integrates with popular wallets and provides a secure environment for NFT transactions.",
-    img: "https://res.cloudinary.com/ddfqedsqq/image/upload/v1743492170/bln_cover.webp",
+    img: "https://res.cloudinary.com/ddfqedsqq/image/upload/v1758328637/nft-cover.webp",
     link: "https://nft.balancenetwork.io/",
     githubLink: "",
     githubVisit: false,
@@ -188,7 +190,7 @@ const portfolio: PortfolioType[] = [
     params:
       "ReactJS, NextJS, Ethers, Web3, Wagmi, Viem, Smart Contract, Solidity, ABI, NestJS",
     desc: "A launchpad for Initial DEX Offerings (IDOs) that enables projects to raise funds and distribute tokens to investors. The platform offers a streamlined process for launching IDOs and provides tools for project management and investor engagement.",
-    img: "https://res.cloudinary.com/ddfqedsqq/image/upload/v1743492170/bln_cover.webp",
+    img: "https://res.cloudinary.com/ddfqedsqq/image/upload/v1758328637/ido-cover.webp",
     link: "https://ido.balancenetwork.io/",
     githubLink: "",
     githubVisit: false,
