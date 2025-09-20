@@ -100,24 +100,24 @@ const portfolio: PortfolioType[] = [
     visit: false,
   },
   {
+    title: "Blind Lover",
+    params:
+      "NextJS, TailwindCSS, TypeScript, Responsive Design, Jotai, AdSense, OpenAI API",
+    desc: "An AI-powered application that asks users 100 questions about their ideal partner. Based on the answers, the AI analyzes the results across 6 different categories and provides personalized insights to the user.",
+    img: "https://res.cloudinary.com/ddfqedsqq/image/upload/v1743492169/blindlover_cover.webp",
+    link: "https://blindlover.vercel.app/en",
+    // link: "https://blindlover.com",
+    githubLink: "https://github.com/furkanqq/blindlover",
+    githubVisit: true,
+    visit: true,
+  },
+  {
     title: "Balance Solution",
     params:
       "NextJS, SCSS, Rest API, Redux, TypeScript, Responsive Design, Directus, Cloudinary",
     desc: "Developed the Balance Solution website using Next.js, SCSS, and TypeScript, integrating with Directus CMS for dynamic content management. Implemented Redux for efficient state management and ensured a responsive design for optimal user experience across devices. Utilized Cloudinary for media handling, enhancing site performance and visual appeal.",
     img: "https://res.cloudinary.com/ddfqedsqq/image/upload/v1743492170/solution_cover.webp",
     link: "https://balance.software/",
-    githubLink: "",
-    githubVisit: false,
-    visit: false,
-  },
-
-  {
-    title: "Blind Lover",
-    params:
-      "NextJS, TailwindCSS, TypeScript, Responsive Design, Jotai, AdSense, OpenAI API",
-    desc: "An AI-powered application that asks users 100 questions about their ideal partner. Based on the answers, the AI analyzes the results across 6 different categories and provides personalized insights to the user.",
-    img: "https://res.cloudinary.com/ddfqedsqq/image/upload/v1743492169/blindlover_cover.webp",
-    link: "https://blindlover.com",
     githubLink: "",
     githubVisit: false,
     visit: false,
