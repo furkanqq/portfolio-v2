@@ -124,14 +124,14 @@ const portfolio: PortfolioType[] = [
   },
 
   {
-    title: "NPM Packages",
-    params: "NodeJS, JS, Package Manager",
-    desc: "Each package is designed to be easy to integrate into React applications.",
-    img: "https://res.cloudinary.com/ddfqedsqq/image/upload/v1743492170/npm_cover.webp",
-    link: "https://www.npmjs.com/~murki",
-    githubLink: "",
-    githubVisit: false,
-    visit: true,
+    title: "Itopya E-Commerce Task",
+    params: ".Net MVC, Html, Css, JQuery",
+    desc: "A task to create a custom e-commerce landing page .Net MVC framework.(Design not submitted for responsive design)",
+    img: "https://res.cloudinary.com/ddfqedsqq/image/upload/v1758575249/itopya-cover.webp",
+    link: "",
+    githubLink: "https://github.com/furkanqq/Itopya-WebUzmani-Task",
+    githubVisit: true,
+    visit: false,
   },
 
   {
@@ -195,6 +195,16 @@ const portfolio: PortfolioType[] = [
     githubLink: "",
     githubVisit: false,
     visit: false,
+  },
+  {
+    title: "NPM Packages",
+    params: "NodeJS, JS, Package Manager",
+    desc: "Each package is designed to be easy to integrate into React applications.",
+    img: "https://res.cloudinary.com/ddfqedsqq/image/upload/v1743492170/npm_cover.webp",
+    link: "https://www.npmjs.com/~murki",
+    githubLink: "",
+    githubVisit: false,
+    visit: true,
   },
 ];
 
