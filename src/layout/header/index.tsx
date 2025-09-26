@@ -23,7 +23,8 @@ export default function Header() {
             alt="Next.js logo"
             fill
             priority
-            objectFit="contain"
+            className="object-contain"
+            fetchPriority="high"
           />
         </Link>
         <nav className="hidden md:flex">

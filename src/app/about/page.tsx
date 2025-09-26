@@ -20,7 +20,14 @@ export default function About() {
             transition={{ duration: 0.5 }}
             className="relative w-52 h-52 overflow-hidden rounded-full"
           >
-            <Image src={"/me.jpeg"} alt="me" fill objectFit="cover" />
+            <Image
+              src={"/me.jpeg"}
+              alt="me"
+              fill
+              className="object-cover"
+              fetchPriority="high"
+              priority
+            />
           </motion.div>
           <div className="w-full md:w-2/3 flex flex-col gap-4 md:gap-10 justify-between">
             <div>
@@ -78,8 +85,8 @@ export default function About() {
                       src={`/skillsIcon/${x.icon}`}
                       alt="icon"
                       fill
-                      objectFit="cover"
-                      className="rounded-md"
+                      className="rounded-md object-cover"
+                      fetchPriority="high"
                     />
                   </div>
                 )}

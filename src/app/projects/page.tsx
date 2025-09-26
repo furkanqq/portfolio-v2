@@ -172,8 +172,9 @@ const Card = ({
           src={project.img}
           alt="Project Screenshot"
           fill
-          objectFit="cover"
+          className="object-cover"
           priority
+          fetchPriority="high"
         />
       </motion.div>
     </motion.div>

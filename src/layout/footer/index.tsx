@@ -16,6 +16,8 @@ export default function Footer() {
             href={"https://www.instagram.com/llhanfurkan/"}
             className="text-gray-700"
             target="_blank"
+            aria-label="Furkan's Instagram Account"
+            id="instagram-link"
           >
             <Instagram />
           </Link>
@@ -30,6 +32,8 @@ export default function Footer() {
             href={"https://www.linkedin.com/in/furkan-ilhan/"}
             className="text-gray-700"
             target="_blank"
+            aria-label="Furkan's Linkedin Account"
+            id="linkedin-link"
           >
             <Linkedin />
           </Link>
@@ -44,6 +48,8 @@ export default function Footer() {
             href={"https://github.com/furkanqq"}
             className="text-gray-700"
             target="_blank"
+            aria-label="Furkan's Github Account"
+            id="github-link"
           >
             <Github />
           </Link>

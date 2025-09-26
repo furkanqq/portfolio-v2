@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { LettersPullUp } from "../letterPullUp";
 import Link from "next/link";
 import * as motion from "motion/react-client";
@@ -11,9 +11,10 @@ function Banner() {
   const [emotion, setEmotion] = useState(false);
   const constraintsRef = useRef(null);
 
-  setTimeout(() => {
-    setText(true);
-  }, 4000);
+  useEffect(() => {
+    const timer = setTimeout(() => setText(true), 4000);
+    return () => clearTimeout(timer);
+  }, []);
   //    drag
   //dragConstraints = { constraintsRef };
   return (
@@ -25,12 +26,12 @@ function Banner() {
         className="w-full h-full absolute z-0"
       >
         <Image
-          className="dark:invert"
+          className="dark:invert object-cover"
           src="/banner_pattern3.png"
           alt="Next.js logo"
           fill
           priority
-          objectFit="cover"
+          fetchPriority="high"
         />
       </motion.div>
       <motion.section
