@@ -36,6 +36,9 @@ export default function Header() {
               <Link href={"/projects"}>Projects</Link>
             </li>
             <li>
+              <Link href={"/blog"}>Blog</Link>
+            </li>
+            <li>
               <Link href={"/contact"}>Contact</Link>
             </li>
             <li className="ml-1">
@@ -61,6 +64,9 @@ export default function Header() {
                       </li>
                       <li className="border-b pb-4">
                         <Link href={"/projects"}>Projects</Link>
+                      </li>
+                      <li className="border-b pb-4">
+                        <Link href={"/blog"}>Blog</Link>
                       </li>
                       <li className="border-b pb-4">
                         <Link href={"/contact"}>Contact</Link>
