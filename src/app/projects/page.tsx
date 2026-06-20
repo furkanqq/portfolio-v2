@@ -5,7 +5,7 @@ import Link from "next/link";
 import * as motion from "motion/react-client";
 import Image from "next/image";
 import portfolio, { PortfolioType } from "@/config/protfolio.config";
-import { Code, Link2, LinkIcon, MousePointerClickIcon } from "lucide-react";
+import { Code, Link2, MousePointerClickIcon } from "lucide-react";
 import {
   Dialog,
   DialogContent,
