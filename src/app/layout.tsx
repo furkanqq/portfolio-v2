@@ -16,22 +16,25 @@ const kodeMono = Kode_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Furkan İlhan | Frontend Developer Portfolio",
+  title: {
+    default: "Furkan İlhan | Frontend-heavy Product Engineer",
+    template: "%s | Furkan İlhan",
+  },
   description:
-    "Istanbul-based Frontend Developer specializing in React, Next.js, TypeScript, and Web3. Explore my portfolio and projects.",
+    "Frontend-heavy product engineer building dashboards, portals, automation flows and client-facing web applications with React, Next.js and TypeScript.",
   authors: [{ name: "Furkan İlhan", url: "https://www.furkanilhan.com" }],
   creator: "Furkan İlhan",
   publisher: "Furkan İlhan",
   metadataBase: new URL("https://www.furkanilhan.com"),
   openGraph: {
-    title: "Furkan İlhan | Frontend Developer Portfolio",
+    title: "Furkan İlhan | Frontend-heavy Product Engineer",
     description:
-      "Istanbul-based Frontend Developer specializing in React, Next.js, TypeScript, and Web3. Explore my portfolio and projects.",
+      "I build frontend-heavy business systems, dashboards and client-facing web applications with React, Next.js and TypeScript.",
     url: "https://www.furkanilhan.com",
     siteName: "Furkan İlhan Portfolio",
     images: [
       {
-        url: "https://www.furkanilhan.com/static/media/1684620138660.6056555e7ead410f9998.jpeg",
+        url: "/me.jpeg",
         width: 1200,
         height: 630,
         alt: "Furkan İlhan Portfolio",
@@ -42,12 +45,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Furkan İlhan | Frontend Developer Portfolio",
+    title: "Furkan İlhan | Frontend-heavy Product Engineer",
     description:
-      "Istanbul-based Frontend Developer specializing in React, Next.js, TypeScript, and Web3. Explore my portfolio and projects.",
-    images: [
-      "https://www.furkanilhan.com/static/media/1684620138660.6056555e7ead410f9998.jpeg",
-    ],
+      "Frontend-heavy product engineer building dashboards, portals, automation flows and client-facing web applications.",
+    images: ["/me.jpeg"],
     creator: "@llhanfurkan",
   },
   robots: {

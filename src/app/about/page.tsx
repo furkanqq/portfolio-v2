@@ -2,12 +2,81 @@
 import ResponsiveContainer from "@/components/container";
 import education from "@/config/education.config";
 import experience from "@/config/experience.config";
-import skills, { ISkillsType } from "@/config/skills.config";
 import Layout from "@/layout";
 import Image from "next/image";
 import * as motion from "motion/react-client";
 import Marquee from "@/components/marquee";
 import Link from "next/link";
+
+const skillGroups = [
+  {
+    title: "Frontend",
+    items: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "Tailwind CSS",
+      "SCSS",
+      "Framer Motion",
+      "GSAP",
+      "Jotai",
+      "Zustand",
+      "Redux Toolkit",
+    ],
+  },
+  {
+    title: "Backend & Data",
+    items: [
+      "Node.js",
+      "NestJS",
+      "REST APIs",
+      "PostgreSQL",
+      "MongoDB",
+      "Redis",
+      "Supabase",
+      "Directus",
+      "MS SQL",
+    ],
+  },
+  {
+    title: "Cloud & Infrastructure",
+    items: [
+      "AWS S3",
+      "Cloudflare R2",
+      "Queue/Worker Flows",
+      "VPS Deployment",
+      "Railway",
+    ],
+  },
+  {
+    title: "Product Experience",
+    items: [
+      "Dashboards",
+      "Admin Panels",
+      "Client Portals",
+      "QR Systems",
+      "Media Upload Workflows",
+      "Crypto Exchange",
+      "NFT Marketplace",
+    ],
+  },
+  {
+    title: "Integrations",
+    items: [
+      "Web3",
+      "Email Automation",
+      "Analytics",
+      "Salesforce",
+      "WorkOS",
+      "Stripe",
+    ],
+  },
+  {
+    title: "Familiar With",
+    items: ["C#", "ASP.NET Core MVC", "Solidity", "Shopify Liquid", "Astro"],
+  },
+];
 
 export default function About() {
   return (
@@ -45,7 +114,9 @@ export default function About() {
                 transition={{ duration: 0.7 }}
                 className="text-gray-600"
               >
-                A Frontend Developer based in Istanbul.
+                I&apos;m a frontend-heavy product engineer based in Istanbul,
+                building dashboards, portals, automation flows and client-facing
+                web applications with React, Next.js and TypeScript.
               </motion.p>
             </div>
             <motion.div
@@ -54,54 +125,56 @@ export default function About() {
               transition={{ duration: 0.9 }}
             >
               <p className="text-gray-600">
-                As a Frontend Developer, I specialize in React, Next.js, and
-                Web3 technologies. With strong problem- solving skills and
-                experience in developing modern user interfaces, I aim to add
-                value to companies.
+                My experience includes admin panels, partner portals, Web3
+                interfaces, QR-based systems, media upload workflows and small
+                backend integrations. I use AI tools to move faster, but I stay
+                responsible for architecture, code review, edge cases and
+                product quality.
               </p>
             </motion.div>
           </div>
         </section>
         <div className="flex flex-col gap-5 mb-12 md:mb-16">
-          <motion.label
+          <motion.h2
             whileInView={{ opacity: [0, 0.5, 1] }}
             className="font-bold text-2xl md:text-3xl"
           >
             My Skills
-          </motion.label>
-          <div className={"flex !flex-wrap gap-4"}>
-            {skills.map((x: ISkillsType, index: number) => (
-              <motion.div
-                initial={{ opacity: 0, translateY: "200%" }}
+          </motion.h2>
+          <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
+            {skillGroups.map((group, index) => (
+              <motion.section
+                initial={{ opacity: 0, translateY: "40%" }}
                 animate={{ opacity: 1, translateY: "0%" }}
-                transition={{ delay: 1 + index / 10 }}
-                key={index}
-                className="relative flex gap-2 flex-col-reverse justify-center items-center w-[136px] p-4 border bg-gray-100 rounded-xl"
+                transition={{ delay: 0.2 + index / 10 }}
+                key={group.title}
+                className="rounded-md border border-gray-100 bg-gray-50 p-4"
               >
-                <span className="text-xs text-center">{x.name}</span>
-                {x.icon !== "" && (
-                  <div className="relative w-10 h-10">
-                    <Image
-                      src={`/skillsIcon/${x.icon}`}
-                      alt="icon"
-                      fill
-                      className="rounded-md object-cover"
-                      fetchPriority="high"
-                    />
-                  </div>
-                )}
-              </motion.div>
+                <h3 className="mb-3 text-base font-semibold text-gray-950">
+                  {group.title}
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {group.items.map((item) => (
+                    <span
+                      className="rounded-md bg-white px-2 py-1 text-xs text-gray-700 shadow-xs"
+                      key={item}
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </motion.section>
             ))}
           </div>
         </div>
 
         <section className="flex flex-col gap-5 mb-4 md:mb-16">
-          <motion.label
+          <motion.h2
             whileInView={{ opacity: [0, 0.5, 1] }}
             className="font-bold text-2xl md:text-3xl"
           >
             Education
-          </motion.label>
+          </motion.h2>
 
           <ol className="items-center sm:flex md:gap-3">
             {education.map((edu, index) => (
@@ -142,13 +215,13 @@ export default function About() {
         </section>
 
         <section className="flex flex-col gap-5 mb-16">
-          <motion.label
+          <motion.h2
             whileInView={{ opacity: [0, 0.5, 1] }}
             transition={{ duration: 1 }}
             className="font-bold text-2xl md:text-3xl"
           >
             Professional Experience
-          </motion.label>
+          </motion.h2>
 
           <ol className="relative border-s border-gray-200 dark:border-gray-700">
             {experience.map((exp, index) => (

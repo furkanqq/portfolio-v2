@@ -7,7 +7,8 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Blog | Furkan Ilhan",
-  description: "Frontend, Next.js and modern web development notes by Furkan Ilhan.",
+  description:
+    "Technical notes in Turkish about frontend development, Next.js, security, tooling and real-world development problems.",
 };
 
 export default async function BlogPage() {
@@ -20,18 +21,19 @@ export default async function BlogPage() {
           <span className="mb-3 inline-flex items-center rounded-md border border-gray-200 px-3 py-1 text-xs uppercase tracking-[0.2em] text-gray-500">
             Blog
           </span>
-          <h2 className="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">
+          <h1 className="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">
             Blog
-          </h2>
+          </h1>
           <p className="mt-2 max-w-2xl text-sm text-gray-600">
-            Frontend, Next.js ve modern web geliştirme üzerine kısa notlar.
+            Technical notes in Turkish about frontend development, Next.js,
+            security, tooling and real-world development problems.
           </p>
         </section>
 
         <div className="hidden min-w-56 rounded-md border border-gray-100 bg-gray-50 p-5 md:block">
           <BookOpenText className="mb-4 h-7 w-7 text-gray-900" />
           <p className="text-sm text-gray-600">
-            Okurken hızlı taranabilen, pratiğe dönük teknik özetler.
+            Practical notes kept concise for scanning and real-world use.
           </p>
         </div>
       </div>
@@ -39,8 +41,12 @@ export default async function BlogPage() {
       {posts.length > 0 ? (
         <section className="grid grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-3">
           {posts.map((post) => (
-            <Link className="group block" href={`/blog/${post.slug}`} key={post.slug}>
-              <article className="h-full overflow-hidden rounded-md border border-gray-100 bg-white transition duration-300 hover:-translate-y-1 hover:border-indigo-200 hover:shadow-[0_18px_45px_rgba(15,23,42,0.08)]">
+            <Link
+              className="group block cursor-[url('/click-cursor.png')_14_12,_pointer]"
+              href={`/blog/${post.slug}`}
+              key={post.slug}
+            >
+              <article className="h-full overflow-hidden rounded-md border border-gray-100 bg-white transition duration-300 group-hover:-translate-y-1 group-hover:border-indigo-200 group-hover:shadow-[0_18px_45px_rgba(15,23,42,0.08)]">
                 <div className="relative h-52 overflow-hidden bg-gray-100 md:h-60">
                   <Image
                     alt={post.title}
@@ -50,7 +56,7 @@ export default async function BlogPage() {
                     sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
                     src={post.cover}
                   />
-                  <div className="absolute left-3 top-3 rounded-md bg-white/90 px-3 py-1 text-xs font-medium text-gray-800 backdrop-blur">
+                  <div className="absolute left-3 top-3 z-30 rounded-md bg-white/90 px-3 py-1 text-xs font-medium text-gray-800 backdrop-blur">
                     {post.readingTime}
                   </div>
                 </div>

@@ -95,12 +95,12 @@ export default function Contact() {
         <div className="flex flex-col md:flex-row gap-2 md:gap-6 justify-between items-center">
           <div className="flex flex-col gap-4 md:gap-10 md:w-[45%] md:h-[500px]">
             <section className="w-full">
-              <h2 className="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">
+              <h1 className="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">
                 Contact Furkan
-              </h2>
-              <p className="mt-2 text-sm text-gray-600">
-                Whether it’s a job offer, a project, or anything that helps me
-                grow.
+              </h1>
+              <p className="mt-2 max-w-xl text-sm text-gray-600">
+                Open to remote frontend roles, product-focused web
+                applications, dashboard projects and freelance collaborations.
               </p>
             </section>
             <Link href="mailto:furkanilhanresmi@gmail.com">
@@ -183,7 +183,7 @@ export default function Contact() {
             <div className="h-10 w-10 pb-12 pt-10 flex md:hidden">Or</div>
           </motion.div>
           <form
-            // onSubmit={(e) => handleSubmit(e)}
+            onSubmit={(e) => handleSubmit(e)}
             action="#"
             method="POST"
             className="w-full md:w-[45%] md:h-[500px]"
@@ -275,7 +275,7 @@ export default function Contact() {
               </div>
               <div className="sm:col-span-2">
                 <label
-                  htmlFor="email"
+                  htmlFor="subject"
                   className="block text-sm/6 font-semibold text-gray-900"
                 >
                   Subject
@@ -288,7 +288,7 @@ export default function Contact() {
                     // value={form.email}
                     id="subject"
                     name="subject"
-                    type="subject"
+                    type="text"
                     autoComplete="subject"
                     className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                   />
@@ -342,7 +342,7 @@ export default function Contact() {
                 </label>
               </div> */}
             </div>
-            <div className="mt-8" onClick={(e) => handleSubmit(e)}>
+            <div className="mt-8">
               <EncryptButton target="Let's talk" className="w-full h-12" />
             </div>
           </form>
